@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="Q2.css">
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+</head>
+<body>
+    <nav class="navbar">
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png"
+        alt="Logo"/>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="btn">Login</div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <main class="hero-section">
+        <div class="text-section">
+          <h3>Say Hi To</h3>
+          <h1>One Card</h1>
+          <h4>Co-branded Card Issuers :</h4>
+          <div class="sponsor-images">
+            <img
+              src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png"
+              alt="sponsor1"
+            />
+          </div>
+          <p>
+            India's best metal credit card. Built with full-stack tech. Backed by
+            the principles of simplicity, transparency, and giving back control to
+            the user.
+          </p>
+        </div>
+        <video loop autoplay="autoplay" controls>
+          <source
+            src="https://www.getonecard.app/images/say_hi_2x_d3_.mp4"
+            type="video/mp4"
+          />
+        </video>
+      </main>
+
+    <script>
+        function toggleMenu() {
+        document.querySelector('.nav-links').classList.toggle('active');
+         }
+    </script>
+ 
+    
+</body>
+</html>
